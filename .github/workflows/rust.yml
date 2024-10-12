@@ -54,7 +54,6 @@ jobs:
         fi > /dev/null
     - name: Archive
       uses: actions/upload-artifact@v4
-      working-directory: "."
       with:
         retention-days: 1
         path: target/release/*
